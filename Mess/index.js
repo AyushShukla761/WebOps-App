@@ -14,6 +14,9 @@ app.engine('ejs',ejsMate)
 app.use(express.urlencoded({extended: true}))
 app.use(methodOverride('_method'))
 
+app.get('/',(req,res)=>{
+    res.redirect('/menu')
+})
 app.get('/menu',(req,res)=>{
     res.render('mess/menu')
 })
