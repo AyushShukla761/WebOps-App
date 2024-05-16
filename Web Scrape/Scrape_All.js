@@ -18,7 +18,7 @@ const links=['https://blog.ankitsanghvi.in/planning-vs-execution/', 'https://blo
 const brows= async () => {
   const cluster = await Cluster.launch({
     concurrency: Cluster.CONCURRENCY_PAGE,
-    maxConcurrency: 8,
+    maxConcurrency: 5,
     puppeteerOptions:{
         headless: true,
         defaultViewport: null
