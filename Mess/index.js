@@ -21,7 +21,7 @@ app.use(methodOverride('_method'))
 //     res.render('mess/menu')
 // })
 
-app.get('/',(req,res)=>{
+app.post('/',(req,res)=>{
     const {region,week,day}= req.body;
     console.log(req.body)
     if(region && week && day){                                // YOU SHOULD USE QUERY WITH KEY region, week, day ONLY.
