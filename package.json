@@ -2,6 +2,7 @@
   "dependencies": {
     "convert-array-to-csv": "^2.0.0",
     "csv-parse": "^5.5.5",
+    "csv-writer": "^1.6.0",
     "puppeteer-cluster": "^0.24.0"
   }
 }
